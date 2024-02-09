@@ -76,7 +76,7 @@ export default function Home() {
         <div className=" slider w-[100%] " style={{ opacity: 1 }}>
           <Slider
             sliderItems={[
-              { type: "image", url: "https://pickmusic-ten.vercel.app/santi" },
+              { type: "image", url: "https://res.cloudinary.com/datptrifz/image/upload/v1707505410/ntcrvqisl5ewl081u1lc.jpg" },
               { type: "video", url: "https://res.cloudinary.com/datptrifz/video/upload/v1707505411/v9wbv6aqrnyy1ztmnmxu.mp4" },
               { type: "image", url: "https://res.cloudinary.com/datptrifz/image/upload/v1707505412/lo9nkw77w8ccz5qilxzb.jpg" },
               { type: "video", url: "https://res.cloudinary.com/datptrifz/video/upload/v1707505412/tujiukhkisvqy37tkscj.mp4" },
