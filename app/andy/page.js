@@ -80,7 +80,7 @@ export default function Home() {
               { type: "video", url: "https://res.cloudinary.com/datptrifz/video/upload/v1707505411/v9wbv6aqrnyy1ztmnmxu.mp4" },
               { type: "image", url: "https://res.cloudinary.com/datptrifz/image/upload/v1707505412/lo9nkw77w8ccz5qilxzb.jpg" },
               { type: "video", url: "https://res.cloudinary.com/datptrifz/video/upload/v1707505412/tujiukhkisvqy37tkscj.mp4" },
-              { type: "image", url: "https://res.cloudinary.com/datptrifz/video/upload/v1707505412/tujiukhkisvqy37tkscj.mp4" },
+              { type: "image", url: "https://res.cloudinary.com/datptrifz/image/upload/v1707505412/lq8ijcioe3rv2jw3ggnp.jpg" },
               { type: "image", url: "https://res.cloudinary.com/datptrifz/image/upload/v1707505411/pcy1t1rkgmyngg82vlev.jpg" },
               { type: "image", url: "https://res.cloudinary.com/datptrifz/image/upload/v1707505410/xh8gqzouahef3m58exv0.jpg" },
               { type: "image", url: "https://res.cloudinary.com/datptrifz/image/upload/v1707505412/yejd4gedwmgpxakmphvc.jpg" },
