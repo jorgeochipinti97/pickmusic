@@ -38,7 +38,7 @@ export default function Home() {
         opacity: 0,
         duration: 1,
         onComplete: () => {
-          setMensaje(play ? "Posta, morite." : "Hermano, te quiero decir algo");
+          setMensaje(play ? "Gracias por ser una inspiración." : "Hermano, te quiero decir algo");
 
           gsap.fromTo(".texto", { opacity: 0 }, { opacity: 1, duration: 0.1 });
         },
