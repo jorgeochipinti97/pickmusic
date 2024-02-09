@@ -76,14 +76,14 @@ export default function Home() {
         <div className=" slider w-[100%] " style={{ opacity: 1 }}>
           <Slider
             sliderItems={[
-              { type: "image", url: "./andy1.jpg" },
-              { type: "video", url: "./andy2.mp4" },
-              { type: "image", url: "/andy3.jpg" },
-              { type: "video", url: "./andy4.mp4" },
-              { type: "image", url: "./andy7.jpg" },
-              { type: "image", url: "./andy9.jpg" },
-              { type: "image", url: "./andy8.jpg" },
-              { type: "image", url: "./andy10.jpg" },
+              { type: "image", url: "https://pickmusic-ten.vercel.app/santi" },
+              { type: "video", url: "https://res.cloudinary.com/datptrifz/video/upload/v1707505411/v9wbv6aqrnyy1ztmnmxu.mp4" },
+              { type: "image", url: "https://res.cloudinary.com/datptrifz/image/upload/v1707505412/lo9nkw77w8ccz5qilxzb.jpg" },
+              { type: "video", url: "https://res.cloudinary.com/datptrifz/video/upload/v1707505412/tujiukhkisvqy37tkscj.mp4" },
+              { type: "image", url: "https://res.cloudinary.com/datptrifz/video/upload/v1707505412/tujiukhkisvqy37tkscj.mp4" },
+              { type: "image", url: "https://res.cloudinary.com/datptrifz/image/upload/v1707505411/pcy1t1rkgmyngg82vlev.jpg" },
+              { type: "image", url: "https://res.cloudinary.com/datptrifz/image/upload/v1707505410/xh8gqzouahef3m58exv0.jpg" },
+              { type: "image", url: "https://res.cloudinary.com/datptrifz/image/upload/v1707505412/yejd4gedwmgpxakmphvc.jpg" },
             ]}
           />
         </div>
