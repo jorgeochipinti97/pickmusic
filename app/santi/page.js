@@ -75,12 +75,12 @@ export default function Page() {
       <div className=" pt-5 flex justify-center">
         <div className=" slider w-[100%] " style={{ opacity: 1 }}>
           <Slider sliderItems={[
-  { type: 'image', url: './1.jpg' },
-  { type: 'image', url: './2.jpg' },
-  { type: 'video', url: '/video.mov' },
-  { type: 'image', url: './4.jpg' },
-  { type: 'image', url: './5.jpg' },
-  { type: 'image', url: './6.jpg' },
+  { type: 'image', url: 'https://res.cloudinary.com/datptrifz/image/upload/v1707505410/cbjjpcsqmcvrdjsatrgr.jpg' },
+  { type: 'image', url: 'https://res.cloudinary.com/datptrifz/image/upload/v1707505411/lj5uutb0hkwonkls7p5c.jpg' },
+  { type: 'video', url: 'https://res.cloudinary.com/datptrifz/video/upload/v1707505541/video_qvmvcl.mp4' },
+  { type: 'image', url: 'https://res.cloudinary.com/datptrifz/image/upload/v1707505410/xcs7dh1jtdjtorjlawju.jpg' },
+  { type: 'image', url: 'https://res.cloudinary.com/datptrifz/image/upload/v1707505415/qcyxmnwkexo8frfjdxiv.jpg' },
+  { type: 'image', url: 'https://res.cloudinary.com/datptrifz/image/upload/v1707505414/teligiunpbtald8126ad.jpg' },
 ]}/>
         </div>
       </div>
