@@ -21,7 +21,7 @@ export const SliderFlip = ({ images }) => {
         className="mySwiper  w-6/12"
       >
         {images.map((e) => (
-          <SwiperSlide>
+          <SwiperSlide key={e}>
             <img src={e} className="w-full " />
           </SwiperSlide>
         ))}
