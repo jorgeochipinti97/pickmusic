@@ -107,3 +107,15 @@ p {
   -webkit-box-shadow: 0px 0px 28px 0px #22C55E;
   -moz-box-shadow: 0px 0px 28px 0px #22C55E;
 }
+
+
+
+.ShadowSeparator{
+  box-shadow: 0px 0px 156px 27px rgba(190,242,100,0.46);
+  -webkit-box-shadow: 0px 0px 156px 27px rgba(190,242,100,0.46);
+  -moz-box-shadow: 0px 0px 156px 27px rgba(190,242,100,0.46);
+}
+
+.swiper-pagination-bullet-active{
+  background-color: green !important;
+}
