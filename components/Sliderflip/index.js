@@ -26,7 +26,7 @@ const isMobile = useIsMobile()
         {images.map((e) => (
           <SwiperSlide key={e}>
             <div className="flex justify-center">
-            <img src={e} className={isMobile ? 'w-8/12':"w-full "} />
+            <img src={e} className={isMobile ? 'w-8/12':"w-8/12 "} />
             </div>
           </SwiperSlide>
         ))}

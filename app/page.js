@@ -7,15 +7,13 @@ import { Steps } from "@/components/Steps";
 import gsap, { Power1 } from "gsap";
 import { useEffect, useState } from "react";
 import {
-  Drawer,
-  DrawerClose,
-  DrawerContent,
-  DrawerDescription,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
-} from "@/components/ui/drawer";
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@radix-ui/react-label";
@@ -74,7 +72,7 @@ export default function Home() {
             <Steps />
           </div>
 
-          <Marquee className="mt-5 md:mt-20 mb-20">
+          <Marquee className="mt-5 md:mt-20 mb-20" autoFill>
             <div
               className="h-[300px]  w-[300px] rounded-xl mx-2 flex items-end justify-center"
               style={{
@@ -84,8 +82,9 @@ export default function Home() {
                 backgroundPosition: "center",
               }}
             >
-              <Drawer>
-                <DrawerTrigger className="my-2 bg-green-200 text-black px-2 shadow-md shadow-gray-800 py-1 rounded-md flex items-center">
+              <Dialog>
+                <DialogTrigger className="my-2 bg-green-200 text-black px-2 shadow-md shadow-gray-800 py-1 rounded-md flex items-center">
+                  {" "}
                   <svg
                     width={20}
                     className="mr-1"
@@ -102,76 +101,76 @@ export default function Home() {
                     ></path>
                   </svg>
                   Comprar
-                </DrawerTrigger>
-                <DrawerContent className="mb-10 ">
-                  <p className="text-center text-md md:text-3xl font-bold">
-                    TAZA PERSONALIZADA YOU
-                  </p>
-                  <p className="text-center text-xl font-medium opacity-[0.6]">
-                    $20.000
-                  </p>
-                  <div className=" grid grid-cols-1 md:grid-cols-2 w-screen">
-                    <div className="flex justify-center">
-                      <SliderFlip
-                        images={["/taza1.png", "/taza2.png"]}
-                      />
-                    </div>
-                    <div className="flex justify-center">
-                      <form className="w-11/12 md:w-6/12 md:my-10 ">
-                        <div className=" justify-center">
-                          <Label>Nombre completo</Label>
-                          <Input />
-                        </div>
-                        <div className=" justify-center mt-5">
-                          <Label>Tarjeta</Label>
-                          <Input />
-                        </div>
-                        <div className=" justify-center mt-5">
-                          <Label>MM/AA</Label>
-                          <Input />
-                        </div>
-                        <div className=" justify-center mt-5">
-                          <Label>CVV</Label>
-                          <Input />
-                        </div>
-                        <Button className="mt-5">
-                          <svg
-                            className="mr-1"
-                            width={20}
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            stroke="#f5f5f7"
-                            viewBox="0 0 24 24"
-                          >
-                            <g
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth="2"
-                            >
-                              <rect
-                                width="18"
-                                height="13"
-                                x="3"
-                                y="6"
-                                rx="2"
-                              ></rect>
-                              <path d="M3 10h17.5M7 15h2"></path>
-                            </g>
-                          </svg>
-                          Pagar
-                        </Button>
-                      </form>
-                    </div>
-                  </div>
-                  <div>
-                    <p className="text-center hidden md:block">
-                      Qui ut esse enim amet eu Lorem deserunt irure nulla ad
-                      et.Voluptate duis aliquip quis velit elit non laboris
-                      dolor ea voluptate duis fugiat non.
+                </DialogTrigger>
+                <DialogContent>
+                  <div className="  bg-white">
+                    <p className="text-center text-md md:text-xl font-bold">
+                      TAZA PERSONALIZADA YOU
                     </p>
+                    <p className="text-center text-xl font-medium opacity-[0.6]">
+                      $20.000
+                    </p>
+                    <div className=" grid grid-cols-1 md:grid-cols-1">
+                      <div className="flex justify-center">
+                        <SliderFlip images={["/taza1.png", "/taza2.png"]} />
+                      </div>
+                      <div className="flex justify-center">
+                        <form className="w-11/12 md:w-6/12 md:my-10 ">
+                          <div className=" justify-center">
+                            <Label>Nombre completo</Label>
+                            <Input />
+                          </div>
+                          <div className=" justify-center mt-5">
+                            <Label>Tarjeta</Label>
+                            <Input />
+                          </div>
+                          <div className=" justify-center mt-5">
+                            <Label>MM/AA</Label>
+                            <Input />
+                          </div>
+                          <div className=" justify-center mt-5">
+                            <Label>CVV</Label>
+                            <Input />
+                          </div>
+                          <Button className="mt-5">
+                            <svg
+                              className="mr-1"
+                              width={20}
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              stroke="#f5f5f7"
+                              viewBox="0 0 24 24"
+                            >
+                              <g
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
+                              >
+                                <rect
+                                  width="18"
+                                  height="13"
+                                  x="3"
+                                  y="6"
+                                  rx="2"
+                                ></rect>
+                                <path d="M3 10h17.5M7 15h2"></path>
+                              </g>
+                            </svg>
+                            Pagar
+                          </Button>
+                        </form>
+                      </div>
+                    </div>
+                    <div>
+                      <p className="text-center hidden md:block text-xs">
+                        Qui ut esse enim amet eu Lorem deserunt irure nulla ad
+                        et.Voluptate duis aliquip quis velit elit non laboris
+                        dolor ea voluptate duis fugiat non.
+                      </p>
+                    </div>
                   </div>
-                </DrawerContent>
-              </Drawer>
+                </DialogContent>
+              </Dialog>
             </div>
             <div
               className="h-[300px]  w-[300px] rounded-xl mx-2 flex items-end justify-center"
@@ -182,8 +181,9 @@ export default function Home() {
                 backgroundPosition: "center",
               }}
             >
-              <Drawer>
-                <DrawerTrigger className="my-2 bg-green-200 text-black px-2 shadow-md shadow-gray-800 py-1 rounded-md flex items-center">
+               <Dialog>
+                <DialogTrigger className="my-2 bg-green-200 text-black px-2 shadow-md shadow-gray-800 py-1 rounded-md flex items-center">
+                  {" "}
                   <svg
                     width={20}
                     className="mr-1"
@@ -200,76 +200,76 @@ export default function Home() {
                     ></path>
                   </svg>
                   Comprar
-                </DrawerTrigger>
-                <DrawerContent className="mb-10 ">
-                  <p className="text-center text-md md:text-3xl font-bold">
-                    TAZA PERSONALIZADA YOU
-                  </p>
-                  <p className="text-center text-xl font-medium opacity-[0.6]">
-                    $20.000
-                  </p>
-                  <div className=" grid grid-cols-1 md:grid-cols-2 w-screen">
-                    <div className="flex justify-center">
-                      <SliderFlip
-                        images={["/tazaresi.png", "/tazaresi1.png"]}
-                      />
-                    </div>
-                    <div className="flex justify-center">
-                      <form className="w-11/12 md:w-6/12 md:my-10 ">
-                        <div className=" justify-center">
-                          <Label>Nombre completo</Label>
-                          <Input />
-                        </div>
-                        <div className=" justify-center mt-5">
-                          <Label>Tarjeta</Label>
-                          <Input />
-                        </div>
-                        <div className=" justify-center mt-5">
-                          <Label>MM/AA</Label>
-                          <Input />
-                        </div>
-                        <div className=" justify-center mt-5">
-                          <Label>CVV</Label>
-                          <Input />
-                        </div>
-                        <Button className="mt-5">
-                          <svg
-                            className="mr-1"
-                            width={20}
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            stroke="#f5f5f7"
-                            viewBox="0 0 24 24"
-                          >
-                            <g
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth="2"
-                            >
-                              <rect
-                                width="18"
-                                height="13"
-                                x="3"
-                                y="6"
-                                rx="2"
-                              ></rect>
-                              <path d="M3 10h17.5M7 15h2"></path>
-                            </g>
-                          </svg>
-                          Pagar
-                        </Button>
-                      </form>
-                    </div>
-                  </div>
-                  <div>
-                    <p className="text-center hidden md:block">
-                      Qui ut esse enim amet eu Lorem deserunt irure nulla ad
-                      et.Voluptate duis aliquip quis velit elit non laboris
-                      dolor ea voluptate duis fugiat non.
+                </DialogTrigger>
+                <DialogContent className=''>
+                  <div className="  bg-white w-10/11">
+                    <p className="text-center text-md md:text-xl font-bold">
+                      TAZA PERSONALIZADA YOU
                     </p>
+                    <p className="text-center text-xl font-medium opacity-[0.6]">
+                      $20.000
+                    </p>
+                    <div className=" grid grid-cols-1 md:grid-cols-1">
+                      <div className="flex justify-center">
+                        <SliderFlip images={["/tazaresi.png", "/tazaresi.png"]} />
+                      </div>
+                      <div className="flex justify-center">
+                        <form className="w-11/12 md:w-6/12 md:my-10 ">
+                          <div className=" justify-center">
+                            <Label>Nombre completo</Label>
+                            <Input />
+                          </div>
+                          <div className=" justify-center mt-5">
+                            <Label>Tarjeta</Label>
+                            <Input />
+                          </div>
+                          <div className=" justify-center mt-5">
+                            <Label>MM/AA</Label>
+                            <Input />
+                          </div>
+                          <div className=" justify-center mt-5">
+                            <Label>CVV</Label>
+                            <Input />
+                          </div>
+                          <Button className="mt-5">
+                            <svg
+                              className="mr-1"
+                              width={20}
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              stroke="#f5f5f7"
+                              viewBox="0 0 24 24"
+                            >
+                              <g
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
+                              >
+                                <rect
+                                  width="18"
+                                  height="13"
+                                  x="3"
+                                  y="6"
+                                  rx="2"
+                                ></rect>
+                                <path d="M3 10h17.5M7 15h2"></path>
+                              </g>
+                            </svg>
+                            Pagar
+                          </Button>
+                        </form>
+                      </div>
+                    </div>
+                    <div>
+                      <p className="text-center hidden md:block text-xs">
+                        Qui ut esse enim amet eu Lorem deserunt irure nulla ad
+                        et.Voluptate duis aliquip quis velit elit non laboris
+                        dolor ea voluptate duis fugiat non.
+                      </p>
+                    </div>
                   </div>
-                </DrawerContent>
-              </Drawer>
+                </DialogContent>
+              </Dialog>
             </div>
           </Marquee>
         </div>
