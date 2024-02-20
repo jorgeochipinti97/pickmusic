@@ -8,8 +8,11 @@ import "swiper/css/effect-flip";
 import "swiper/css/pagination";
 
 import { EffectFlip, Pagination } from "swiper/modules";
+import { useIsMobile } from "@/app/hook/useIsMobile";
 
 export const SliderFlip = ({ images }) => {
+const isMobile = useIsMobile()
+
   return (
     <>
       <Swiper
@@ -22,7 +25,9 @@ export const SliderFlip = ({ images }) => {
       >
         {images.map((e) => (
           <SwiperSlide key={e}>
-            <img src={e} className="w-full " />
+            <div className="flex justify-center">
+            <img src={e} className={isMobile ? 'w-8/12':"w-full "} />
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>
