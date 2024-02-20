@@ -52,7 +52,7 @@ export default function Home() {
             </p>
             <div className="ShadowSeparator bg-gradient-to-r from-lime-400 to-green-500 h-[1vh] rounded-full mt-2" />
             <p className="text-white font-sans text-center tracking-tighter	 mt-2 text-md md:text-xl">
-              Tazas que Hablan: Escanea, Sonríe y Compartí
+Escanea, Sonríe y Compartí
             </p>
           </div>
           <div className="w-screen flex justify-center mt-5">
