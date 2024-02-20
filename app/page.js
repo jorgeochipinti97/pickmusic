@@ -20,6 +20,7 @@ import { Label } from "@radix-ui/react-label";
 import { SliderFlip } from "@/components/Sliderflip";
 import Marquee from "react-fast-marquee";
 import { useIsMobile } from "./hook/useIsMobile";
+import { Checkbox } from "@/components/ui/checkbox";
 
 export default function Home() {
   const tarjetas = [
@@ -72,7 +73,7 @@ export default function Home() {
             <Steps />
           </div>
 
-          <Marquee className="mt-5 md:mt-20 mb-20" autoFill>
+          <Marquee className="mt-5 md:mt-20 mb-20" autoFill speed={130}>
             <div
               className="h-[300px]  w-[300px] rounded-xl mx-2 flex items-end justify-center"
               style={{
@@ -114,8 +115,15 @@ export default function Home() {
                       <div className="flex justify-center">
                         <SliderFlip images={["/taza1.png", "/taza2.png"]} />
                       </div>
+                      <div>
+                        <p className="text-center hidden md:block text-xs">
+                          Qui ut esse enim amet eu Lorem deserunt irure nulla ad
+                          et.Voluptate duis aliquip quis velit elit non laboris
+                          dolor ea voluptate duis fugiat non.
+                        </p>
+                      </div>
                       <div className="flex justify-center">
-                        <form className="w-11/12 md:w-6/12 md:my-10 ">
+                        <form className="w-11/12 md:w-8/12 md:mt-5 ">
                           <div className=" justify-center">
                             <Label>Nombre completo</Label>
                             <Input />
@@ -131,6 +139,15 @@ export default function Home() {
                           <div className=" justify-center mt-5">
                             <Label>CVV</Label>
                             <Input />
+                          </div>
+                          <div className="flex items-center mt-5 space-x-2">
+                            <Checkbox id="terms" />
+                            <Label
+                              htmlFor="terms"
+                              className="text-sm  font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                            >
+                              Aceptar terminos y condiciones
+                            </Label>
                           </div>
                           <Button className="mt-5">
                             <svg
@@ -161,13 +178,6 @@ export default function Home() {
                         </form>
                       </div>
                     </div>
-                    <div>
-                      <p className="text-center hidden md:block text-xs">
-                        Qui ut esse enim amet eu Lorem deserunt irure nulla ad
-                        et.Voluptate duis aliquip quis velit elit non laboris
-                        dolor ea voluptate duis fugiat non.
-                      </p>
-                    </div>
                   </div>
                 </DialogContent>
               </Dialog>
@@ -181,7 +191,7 @@ export default function Home() {
                 backgroundPosition: "center",
               }}
             >
-               <Dialog>
+              <Dialog>
                 <DialogTrigger className="my-2 bg-green-200 text-black px-2 shadow-md shadow-gray-800 py-1 rounded-md flex items-center">
                   {" "}
                   <svg
@@ -201,7 +211,7 @@ export default function Home() {
                   </svg>
                   Comprar
                 </DialogTrigger>
-                <DialogContent className=''>
+                <DialogContent className="">
                   <div className="  bg-white w-10/11">
                     <p className="text-center text-md md:text-xl font-bold">
                       TAZA PERSONALIZADA YOU
@@ -211,10 +221,19 @@ export default function Home() {
                     </p>
                     <div className=" grid grid-cols-1 md:grid-cols-1">
                       <div className="flex justify-center">
-                        <SliderFlip images={["/tazaresi.png", "/tazaresi.png"]} />
+                        <SliderFlip
+                          images={["/tazaresi.png", "/tazaresi1.png"]}
+                        />
+                      </div>
+                      <div>
+                        <p className="text-center hidden md:block text-xs">
+                          Qui ut esse enim amet eu Lorem deserunt irure nulla ad
+                          et.Voluptate duis aliquip quis velit elit non laboris
+                          dolor ea voluptate duis fugiat non.
+                        </p>
                       </div>
                       <div className="flex justify-center">
-                        <form className="w-11/12 md:w-6/12 md:my-10 ">
+                        <form className="w-11/12 md:w-8/12 md:mt-5 ">
                           <div className=" justify-center">
                             <Label>Nombre completo</Label>
                             <Input />
@@ -230,6 +249,15 @@ export default function Home() {
                           <div className=" justify-center mt-5">
                             <Label>CVV</Label>
                             <Input />
+                          </div>
+                          <div className="flex mt-5 items-center space-x-2">
+                            <Checkbox id="terms" />
+                            <Label
+                              htmlFor="terms"
+                              className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                            >
+                              Aceptar terminos y condiciones
+                            </Label>
                           </div>
                           <Button className="mt-5">
                             <svg
@@ -259,13 +287,6 @@ export default function Home() {
                           </Button>
                         </form>
                       </div>
-                    </div>
-                    <div>
-                      <p className="text-center hidden md:block text-xs">
-                        Qui ut esse enim amet eu Lorem deserunt irure nulla ad
-                        et.Voluptate duis aliquip quis velit elit non laboris
-                        dolor ea voluptate duis fugiat non.
-                      </p>
                     </div>
                   </div>
                 </DialogContent>
