@@ -104,63 +104,67 @@ export default function Home() {
                   Comprar
                 </DrawerTrigger>
                 <DrawerContent className="mb-10 ">
-                  <p className="text-center text-3xl font-bold">
+                  <p className="text-center text-md md:text-3xl font-bold">
                     TAZA PERSONALIZADA YOU
                   </p>
                   <p className="text-center text-xl font-medium opacity-[0.6]">
                     $20.000
                   </p>
-                  <div className=" grid grid-cols-2 w-screen">
+                  <div className=" grid grid-cols-1 md:grid-cols-2 w-screen">
                     <div className="flex justify-center">
-                      <SliderFlip images={["/taza1.png", "/taza2.png"]} />
+                      <SliderFlip
+                        images={["/taza1.png", "/taza2.png"]}
+                      />
                     </div>
-                    <form className="w-6/12 my-10 ">
-                      <div className=" justify-center">
-                        <Label>Nombre completo</Label>
-                        <Input />
-                      </div>
-                      <div className=" justify-center mt-5">
-                        <Label>Tarjeta</Label>
-                        <Input />
-                      </div>
-                      <div className=" justify-center mt-5">
-                        <Label>MM/AA</Label>
-                        <Input />
-                      </div>
-                      <div className=" justify-center mt-5">
-                        <Label>CVV</Label>
-                        <Input />
-                      </div>
-                      <Button className="mt-5">
-                        <svg
-                          className="mr-1"
-                          width={20}
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          stroke="#f5f5f7"
-                          viewBox="0 0 24 24"
-                        >
-                          <g
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
+                    <div className="flex justify-center">
+                      <form className="w-11/12 md:w-6/12 md:my-10 ">
+                        <div className=" justify-center">
+                          <Label>Nombre completo</Label>
+                          <Input />
+                        </div>
+                        <div className=" justify-center mt-5">
+                          <Label>Tarjeta</Label>
+                          <Input />
+                        </div>
+                        <div className=" justify-center mt-5">
+                          <Label>MM/AA</Label>
+                          <Input />
+                        </div>
+                        <div className=" justify-center mt-5">
+                          <Label>CVV</Label>
+                          <Input />
+                        </div>
+                        <Button className="mt-5">
+                          <svg
+                            className="mr-1"
+                            width={20}
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            stroke="#f5f5f7"
+                            viewBox="0 0 24 24"
                           >
-                            <rect
-                              width="18"
-                              height="13"
-                              x="3"
-                              y="6"
-                              rx="2"
-                            ></rect>
-                            <path d="M3 10h17.5M7 15h2"></path>
-                          </g>
-                        </svg>
-                        Pagar
-                      </Button>
-                    </form>
+                            <g
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
+                            >
+                              <rect
+                                width="18"
+                                height="13"
+                                x="3"
+                                y="6"
+                                rx="2"
+                              ></rect>
+                              <path d="M3 10h17.5M7 15h2"></path>
+                            </g>
+                          </svg>
+                          Pagar
+                        </Button>
+                      </form>
+                    </div>
                   </div>
                   <div>
-                    <p className="text-center">
+                    <p className="text-center hidden md:block">
                       Qui ut esse enim amet eu Lorem deserunt irure nulla ad
                       et.Voluptate duis aliquip quis velit elit non laboris
                       dolor ea voluptate duis fugiat non.
