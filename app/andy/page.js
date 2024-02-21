@@ -35,12 +35,13 @@ export default function Home() {
 
     if (play && counter == 0) {
       gsap.to(".texto", {
-        opacity: 0,
+
         duration: 1,
+        top:'75%',
         onComplete: () => {
           setMensaje(play ? "Gracias por ser una inspiración." : "Hermano, te quiero decir algo");
 
-          gsap.fromTo(".texto", { opacity: 0 }, { opacity: 1, duration: 0.1 });
+          gsap.fromTo(".texto", { opacity: 0 }, { opacity: 1, duration: 2 });
         },
       });
 
@@ -69,9 +70,8 @@ export default function Home() {
       fourthColor="127, 171, 74"
       fifthColor="243, 129, 149"
     >
-      <div className="w-screen flex my-5 flex-col  items-center justify-center">
+
         <MusicCard onCall={setIsPlay} play={play} />
-      </div>
       <div className=" pt-5 flex justify-center">
         <div className=" slider w-[100%] " style={{ opacity: 1 }}>
           <Slider
@@ -89,7 +89,7 @@ export default function Home() {
         </div>
       </div>
       <div className="h-[20vh] flex items-center justify-center w-full">
-        <p className="font-sans texto z-50 text-4xl  text-white font-thin mt-5 w-10/12  text-center ">
+        <p className="font-sans mesnsaje_ texto z-50 text-4xl  text-white font-thin fixed top-[30%] w-10/12  text-center ">
           {mensaje}
         </p>
       </div>

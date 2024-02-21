@@ -44,14 +44,14 @@ export const Slider = ({ sliderItems }) => {
               />
 
             ) : (
-              <div className="flex justify-center w-full rounded-lg">
+              <div className="flex justify-center w-fit rounded-lg">
                 <video
                   src={item.url}
                   autoPlay
                   loop
                   muted
                   playsInline
-                  controls
+
                   className="w-10/12 rounded-lg"
                   style={{ borderRadius: "9px" }}
                 />

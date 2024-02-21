@@ -35,12 +35,13 @@ export default function Page() {
 
     if (play && counter == 0) {
       gsap.to(".texto", {
-        opacity: 0,
+
         duration: 1,
+        top:'80%',
         onComplete: () => {
           setMensaje(play ? "Vamos al faro?" : "Hermano, te quiero decir algo");
 
-          gsap.fromTo(".texto", { opacity: 0 }, { opacity: 1, duration: 0.1 });
+          gsap.fromTo(".texto", { opacity: 0 }, { opacity: 1, duration: 2 });
         },
       });
 
@@ -105,7 +106,7 @@ export default function Page() {
         </div>
       </div>
       <div className="h-[20vh] flex items-center justify-center w-full">
-        <p className="font-sans texto z-50 text-4xl  text-white font-thin  w-10/12  text-center ">
+      <p className="font-sans mesnsaje_ texto z-50 text-4xl  text-white font-thin fixed top-[30%] w-10/12  text-center ">
           {mensaje}
         </p>
       </div>
