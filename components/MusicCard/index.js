@@ -16,7 +16,7 @@ export const MusicCard = ({ onCall, play }) => {
         onClick={() => onCall(!play)}
         className="flex fixed top-[85%] left-[40%]  glowElement border border-[#22C55E] z-50 shadowBox   justify-around  rounded-xl w-fit p-4"
       >
-        <div className="flex justify-around w-[90%] items-center ">
+        <div className="flex justify-around w-[95%] items-center ">
           <div>
             <button className="rounded-full p-2 border-2 hover:scale-[1.2] transition-all duration-500  border-[#22C55E]">
               {play ? (
