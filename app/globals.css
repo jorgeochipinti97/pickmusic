@@ -119,3 +119,7 @@ p {
 .swiper-pagination-bullet-active{
   background-color: green !important;
 }
+
+.widt{
+  width: 100vw !important;
+}

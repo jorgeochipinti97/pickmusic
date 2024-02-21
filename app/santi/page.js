@@ -38,7 +38,7 @@ export default function Page() {
         opacity: 0,
         duration: 1,
         onComplete: () => {
-          setMensaje(play ? "Posta, morite." : "Hermano, te quiero decir algo");
+          setMensaje(play ? "Vamos al faro?" : "Hermano, te quiero decir algo");
 
           gsap.fromTo(".texto", { opacity: 0 }, { opacity: 1, duration: 0.1 });
         },
@@ -74,14 +74,34 @@ export default function Page() {
       </div>
       <div className=" pt-5 flex justify-center">
         <div className=" slider w-[100%] " style={{ opacity: 1 }}>
-          <Slider sliderItems={[
-  { type: 'image', url: 'https://res.cloudinary.com/datptrifz/image/upload/v1707505410/cbjjpcsqmcvrdjsatrgr.jpg' },
-  { type: 'image', url: 'https://res.cloudinary.com/datptrifz/image/upload/v1707505411/lj5uutb0hkwonkls7p5c.jpg' },
-  { type: 'video', url: 'https://res.cloudinary.com/datptrifz/video/upload/v1707505541/video_qvmvcl.mp4' },
-  { type: 'image', url: 'https://res.cloudinary.com/datptrifz/image/upload/v1707505410/xcs7dh1jtdjtorjlawju.jpg' },
-  { type: 'image', url: 'https://res.cloudinary.com/datptrifz/image/upload/v1707505415/qcyxmnwkexo8frfjdxiv.jpg' },
-  { type: 'image', url: 'https://res.cloudinary.com/datptrifz/image/upload/v1707505414/teligiunpbtald8126ad.jpg' },
-]}/>
+          <Slider
+            sliderItems={[
+              {
+                type: "image",
+                url: "https://res.cloudinary.com/datptrifz/image/upload/v1707505410/cbjjpcsqmcvrdjsatrgr.jpg",
+              },
+              {
+                type: "image",
+                url: "https://res.cloudinary.com/datptrifz/image/upload/v1707505411/lj5uutb0hkwonkls7p5c.jpg",
+              },
+              {
+                type: "video",
+                url: "https://res.cloudinary.com/datptrifz/video/upload/v1707505541/video_qvmvcl.mp4",
+              },
+              {
+                type: "image",
+                url: "https://res.cloudinary.com/datptrifz/image/upload/v1707505410/xcs7dh1jtdjtorjlawju.jpg",
+              },
+              {
+                type: "image",
+                url: "https://res.cloudinary.com/datptrifz/image/upload/v1707505415/qcyxmnwkexo8frfjdxiv.jpg",
+              },
+              {
+                type: "image",
+                url: "https://res.cloudinary.com/datptrifz/image/upload/v1707505414/teligiunpbtald8126ad.jpg",
+              },
+            ]}
+          />
         </div>
       </div>
       <div className="h-[20vh] flex items-center justify-center w-full">

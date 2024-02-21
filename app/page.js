@@ -191,7 +191,7 @@ Escanea, Sonríe y Compartí
                 backgroundPosition: "center",
               }}
             >
-              <Dialog>
+              <Dialog  className=''>
                 <DialogTrigger className="my-2 bg-green-200 text-black px-2 shadow-md shadow-gray-800 py-1 rounded-md flex items-center">
                   {" "}
                   <svg
@@ -211,8 +211,8 @@ Escanea, Sonríe y Compartí
                   </svg>
                   Comprar
                 </DialogTrigger>
-                <DialogContent className="">
-                  <div className="  bg-white w-10/11">
+                <DialogContent className=" widt" >
+                  <div className="   w-11/12">
                     <p className="text-center tracking-tighter text-md md:text-xl font-bold">
                       TAZA PERSONALIZADA YOU
                     </p>
@@ -233,7 +233,7 @@ Escanea, Sonríe y Compartí
                         </p>
                       </div>
                       <div className="flex justify-center">
-                        <form className="w-11/12 md:w-8/12 md:mt-5 ">
+                        <form className="w-11/12 md:w-10/12 md:mt-5 ">
                           <div className=" justify-center">
                             <Label>Nombre completo</Label>
                             <Input />
