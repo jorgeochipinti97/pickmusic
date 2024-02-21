@@ -37,7 +37,7 @@ export default function Home() {
       gsap.to(".texto", {
 
         duration: 1,
-        top:'75%',
+        top:'80%',
         onComplete: () => {
           setMensaje(play ? "Gracias por ser una inspiración." : "Hermano, te quiero decir algo");
 
