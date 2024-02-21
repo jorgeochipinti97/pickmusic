@@ -37,7 +37,7 @@ export default function Home() {
       gsap.to(".texto", {
 
         duration: 1,
-        top:'80%',
+        top:'10%',
         onComplete: () => {
           setMensaje(play ? "Gracias por ser una inspiración." : "Hermano, te quiero decir algo");
 
@@ -72,8 +72,8 @@ export default function Home() {
     >
 
         <MusicCard onCall={setIsPlay} play={play} />
-      <div className=" pt-5 flex justify-center">
-        <div className=" slider w-[100%] " style={{ opacity: 1 }}>
+        <div className=" h-screen items-center flex justify-center">
+        <div className=" slider w-[100%] mt-10 " style={{ opacity: 1 }}>
           <Slider
             sliderItems={[
               { type: "image", url: "https://res.cloudinary.com/datptrifz/image/upload/v1707505410/ntcrvqisl5ewl081u1lc.jpg" },

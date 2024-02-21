@@ -37,7 +37,7 @@ export default function Page() {
       gsap.to(".texto", {
 
         duration: 1,
-        top:'80%',
+        top:'10%',
         onComplete: () => {
           setMensaje(play ? "Vamos al faro?" : "Hermano, te quiero decir algo");
 
@@ -73,7 +73,7 @@ export default function Page() {
       <div className="w-screen flex my-5 flex-col  items-center justify-center">
         <MusicCard onCall={setIsPlay} play={play} />
       </div>
-      <div className=" pt-5 flex justify-center">
+      <div className=" h-screen items-center flex justify-center">
         <div className=" slider w-[100%] " style={{ opacity: 1 }}>
           <Slider
             sliderItems={[
