@@ -105,7 +105,7 @@ export default function Page() {
         </div>
       </div>
       <div className="h-[20vh] flex items-center justify-center w-full">
-        <p className="font-sans texto z-50 text-4xl  text-white font-thin mt-5 w-10/12  text-center ">
+        <p className="font-sans texto z-50 text-4xl  text-white font-thin  w-10/12  text-center ">
           {mensaje}
         </p>
       </div>

@@ -32,7 +32,7 @@ export const Slider = ({ sliderItems }) => {
         style={{ opacity: 0 }}
       >
         {sliderItems.map((item, index) => (
-          <SwiperSlide key={index} className="rounded-lg h-[40vh]">
+          <SwiperSlide key={index} className="rounded-lg h-[30vh]">
             {item.type === "image" ? (
               <div
                 style={{
@@ -51,7 +51,8 @@ export const Slider = ({ sliderItems }) => {
                   loop
                   muted
                   playsInline
-                  className="w-8/12 rounded-lg"
+                  controls
+                  className="w-10/12 rounded-lg"
                   style={{ borderRadius: "9px" }}
                 />
               </div>
