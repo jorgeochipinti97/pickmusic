@@ -52,7 +52,7 @@ export const Slider = ({ sliderItems }) => {
                   muted
                   playsInline
 
-                  className="w-10/12 rounded-lg"
+                  className="w-9/12 rounded-lg"
                   style={{ borderRadius: "9px" }}
                 />
               </div>
