@@ -73,7 +73,7 @@ Escanea, Sonríe y Compartí
             <Steps />
           </div>
 
-          <Marquee className="mt-5 md:mt-20 mb-20" autoFill speed={130}>
+          <Marquee className="mt-5 md:mt-20 mb-20" autoFill speed={130} pauseOnHover={true}>
             <div
               className="h-[300px]  w-[300px] rounded-xl mx-2 flex items-end justify-center"
               style={{
