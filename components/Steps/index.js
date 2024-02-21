@@ -72,20 +72,16 @@ export const Steps = () => {
             </span>
             <CardHeader>
               <div className="flex justify-center">
-                <svg
-                  width={50}
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="#f5f5f7"
-                  viewBox="0 0 24 24"
-                >
-                  <g stroke="black" strokeWidth="2">
-                    <path d="M4 7c0-1.886 0-2.828.586-3.414C5.172 3 6.114 3 8 3h8c1.886 0 2.828 0 3.414.586C20 4.172 20 5.114 20 7v8c0 2.828 0 4.243-.879 5.121C18.243 21 16.828 21 14 21h-4c-2.828 0-4.243 0-5.121-.879C4 19.243 4 17.828 4 15V7z"></path>
-                    <path
-                      strokeLinecap="round"
-                      d="M15 18v3m-6-3v3M9 8h6M9 12h6"
-                    ></path>
-                  </g>
-                </svg>
+              <svg 
+              width={50}
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+      <path
+        fill="#f5f5f7"
+        fillRule="evenodd"
+        d="M21.121 2.707a3 3 0 00-4.242 0l-1.68 1.68-7.906 7.906a1 1 0 00-.263.464l-1 4a1 1 0 001.213 1.213l4-1a1 1 0 00.464-.263l7.849-7.848 1.737-1.738a3 3 0 000-4.242l-.172-.172zm-2.828 1.414a1 1 0 011.414 0l.172.172a1 1 0 010 1.414l-1.017 1.017-1.555-1.617.986-.986zm-2.4 2.4l1.555 1.617-6.96 6.959-2.114.529.529-2.115 6.99-6.99zM4 8a1 1 0 011-1h5a1 1 0 100-2H5a3 3 0 00-3 3v11a3 3 0 003 3h11a3 3 0 003-3v-5a1 1 0 00-2 0v5a1 1 0 01-1 1H5a1 1 0 01-1-1V8z"
+        clipRule="evenodd"
+      ></path>
+    </svg>
               </div>
               <CardTitle className="text-center text-white font-sans mt-10 text-xl md:text-3xl">
                 Personalizá tu web
@@ -103,11 +99,11 @@ export const Steps = () => {
             <span className="mt-10 text-emerald-50 font-bold text-3xl">
               Paso 3
             </span>
-            <CardHeader>
-              <div className="flex justify-center">
+              <div className="flex justify-center mt-2">
                 <img src="/phone.png" className="w-[100px]" />
               </div>
-              <CardTitle className="text-center text-gray-300 font-sans mt-10 text-xl md:text-3xl">
+            <CardHeader>
+              <CardTitle className="text-center text-gray-300 font-sans text-xl md:text-3xl">
                 Escaneá y viví la experiencia.
               </CardTitle>
             </CardHeader>

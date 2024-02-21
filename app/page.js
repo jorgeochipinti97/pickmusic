@@ -63,7 +63,7 @@ Escanea, Sonríe y Compartí
               style={{
                 letterSpacing: -2,
               }}
-              className="font-geist text-white text-4xl text-center pt-10"
+              className="font-geist text-white tracking-tighter text-4xl text-center pt-10"
             >
               ¿Cómo funciona?
             </p>
@@ -105,7 +105,7 @@ Escanea, Sonríe y Compartí
                 </DialogTrigger>
                 <DialogContent>
                   <div className="  bg-white">
-                    <p className="text-center text-md md:text-xl font-bold">
+                    <p className="text-center tracking-tighter text-md md:text-xl font-bold">
                       TAZA PERSONALIZADA YOU
                     </p>
                     <p className="text-center text-xl font-medium opacity-[0.6]">
@@ -116,7 +116,7 @@ Escanea, Sonríe y Compartí
                         <SliderFlip images={["/taza1.png", "/taza2.png"]} />
                       </div>
                       <div>
-                        <p className="text-center hidden md:block text-xs">
+                        <p className="text-center tracking-tighter hidden md:block text-xs">
                           Qui ut esse enim amet eu Lorem deserunt irure nulla ad
                           et.Voluptate duis aliquip quis velit elit non laboris
                           dolor ea voluptate duis fugiat non.
@@ -144,7 +144,7 @@ Escanea, Sonríe y Compartí
                             <Checkbox id="terms" />
                             <Label
                               htmlFor="terms"
-                              className="text-sm  font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                              className="text-sm tracking-tighter  font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                             >
                               Aceptar terminos y condiciones
                             </Label>
@@ -213,10 +213,10 @@ Escanea, Sonríe y Compartí
                 </DialogTrigger>
                 <DialogContent className="">
                   <div className="  bg-white w-10/11">
-                    <p className="text-center text-md md:text-xl font-bold">
+                    <p className="text-center tracking-tighter text-md md:text-xl font-bold">
                       TAZA PERSONALIZADA YOU
                     </p>
-                    <p className="text-center text-xl font-medium opacity-[0.6]">
+                    <p className="text-center  text-xl font-medium opacity-[0.6]">
                       $20.000
                     </p>
                     <div className=" grid grid-cols-1 md:grid-cols-1">
@@ -226,7 +226,7 @@ Escanea, Sonríe y Compartí
                         />
                       </div>
                       <div>
-                        <p className="text-center hidden md:block text-xs">
+                        <p className="text-center tracking-tighter hidden md:block text-xs">
                           Qui ut esse enim amet eu Lorem deserunt irure nulla ad
                           et.Voluptate duis aliquip quis velit elit non laboris
                           dolor ea voluptate duis fugiat non.
@@ -254,7 +254,7 @@ Escanea, Sonríe y Compartí
                             <Checkbox id="terms" />
                             <Label
                               htmlFor="terms"
-                              className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                              className="text-sm font-medium leading-none tracking-tighter peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                             >
                               Aceptar terminos y condiciones
                             </Label>
